@@ -1,0 +1,29 @@
+<mat-tab-group>
+  <mat-tab label="Booking">
+    <div *ngIf="ArrayVal.length == 0">
+    No data
+    </div>
+    <div *ngFor="let val of ArrayVal">
+      Date : {{val.date }}<br>
+      going_to : {{val.going_to }}<br>
+      leaving_form : {{val.leaving_form }}<br>
+      Classes : {{val.Classes }}<br>
+      Amount : {{val.Amount }}<br>
+      TrainStatus : {{val.TrainStatus }}
+    <button (click)="cancelTicket(val)">Cancel Ticket</button>
+    </div>
+  </mat-tab>
+  <mat-tab label="Cancel" >
+    <div *ngIf="cancelVal.length == 0">
+      No data
+      </div>
+    <div *ngFor="let can of cancelVal">
+      Date : {{can.date }}<br>
+      going_to : {{can.going_to }}<br>
+      leaving_form : {{can.leaving_form }}<br>
+      Amount : {{can.Amount }}<br>
+      Classes : {{can.Classes }}<br>
+      TrainStatus : {{can.TrainStatus }}
+    </div>
+  </mat-tab>
+</mat-tab-group>

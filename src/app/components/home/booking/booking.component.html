@@ -1,0 +1,13 @@
+<mat-card >
+  Leaving Form : {{bookingData?.leaving_form}}
+  Going To : {{bookingData?.going_to}}
+  Date : {{bookingData?.date}}
+  <mat-card *ngFor="let seat of seatAva" (click)="eventPass(seat)" >
+  {{seat.Classes}}
+  {{seat.TrainStatus}}
+  {{seat.Amount}}
+
+  </mat-card>
+
+<button (click)="submitData()">Booking</button>
+</mat-card>
