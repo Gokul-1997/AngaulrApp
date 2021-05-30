@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component'
 import { BookingComponent } from './booking/booking.component';
 import { HistoryComponent } from './history/history.component';
-import { CancelComponent } from './cancel/cancel.component';
 
 const routes: Routes = [
   {
@@ -17,12 +16,8 @@ const routes: Routes = [
   {
     path:'history',
     component:HistoryComponent
-  },
-  {
-    path:'cancel',
-    component:CancelComponent
   }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

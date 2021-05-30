@@ -2,40 +2,55 @@
   "SeatsAva": [
     {
       "Classes": "Sleeper",
-      "TrainStatus": "Train Departed",
+      "TrainStatus": "Currently Available",
       "Amount": 900,
+      "Status": false,
       "id": 1
     },
     {
       "Classes": "AC 3 Tier",
-      "TrainStatus": "Train Departed",
+      "TrainStatus": "Currently Available",
       "Amount": 2605,
       "Status": false,
       "id": 2
     },
     {
       "Classes": "AC 2 Tier",
-      "TrainStatus": "Train Departed",
+      "TrainStatus": "Currently Available",
       "Amount": 4375,
       "Status": false,
       "id": 3
     },
     {
       "Classes": "AC 3 Tier",
-      "TrainStatus": "Train Departed",
+      "TrainStatus": "Currently Available",
       "Amount": 5380,
       "Status": false,
       "id": 4
+    },
+    {
+      "Classes": "Sleeper",
+      "TrainStatus": "Currently Available",
+      "Amount": 745,
+      "Status": false,
+      "id": 5
+    },
+    {
+      "Classes": "Secound Sitting",
+      "TrainStatus": "Currently Available",
+      "Amount": 455,
+      "Status": false,
+      "id": 6
     }
   ],
   "cancelTicket": [
     {
       "Classes": "Sleeper",
-      "TrainStatus": "Train Departed",
+      "TrainStatus": "Currently Available",
       "Amount": 900,
-      "date": "2021-05-29T18:30:00.000Z",
-      "going_to": "Comilla",
-      "leaving_form": "dhaka",
+      "date": "2021-05-30T18:30:00.000Z",
+      "going_to": "Chittagong",
+      "leaving_form": "comilla",
       "id": 1
     }
   ]

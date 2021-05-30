@@ -1,13 +1,21 @@
-<mat-card >
-  Leaving Form : {{bookingData?.leaving_form}}
-  Going To : {{bookingData?.going_to}}
-  Date : {{bookingData?.date}}
-  <mat-card *ngFor="let seat of seatAva" (click)="eventPass(seat)" >
-  {{seat.Classes}}
-  {{seat.TrainStatus}}
-  {{seat.Amount}}
-
-  </mat-card>
-
-<button (click)="submitData()">Booking</button>
+<mat-card>
+  Leaving Form : {{ bookingData?.leaving_form }}
+  Start Time : {{ TrainstartTime | date:'MMMM dd yyyy hh:mm'}}  ||  Going To :{{ bookingData?.going_to }} End Time : {{ TrainendTime | date:'MMMM dd yyyy hh:mm'}}
+  <div class="col-md-12 align-items-center">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let seat of seatAva">
+        <input
+          type="checkbox"
+          value="{{ seat.id }}"
+          [checked]="seat.isSelected"
+          [disabled]="seat.Status"
+          (click)="isAllSelected(seat)"
+        />
+        {{ seat.Classes }}
+        {{ seat.TrainStatus }}
+        {{ seat.Amount }}
+      </li>
+    </ul>
+  </div>
+  <button (click)="submitData()" [disabled]="!selectVal">Booking</button>
 </mat-card>
