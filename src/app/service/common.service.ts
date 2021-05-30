@@ -6,28 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CommonService {
   toolbar: boolean = false;
-  SeatsAva = [
-    {
-      "Classes":"Sleeper",
-       "Amount":900,
-       "TrainStatus":'Train Departed'
-    },
-    {
-      "Classes":"AC 3 Tier",
-       "Amount":2605,
-       "TrainStatus":'Train Departed'
-    },
-    {
-      "Classes":"AC 2 Tier",
-       "Amount":4375,
-       "TrainStatus":'Train Departed'
-    },
-    {
-      "Classes":"AC 3 Tier",
-       "Amount":5380,
-       "TrainStatus":'Train Departed'
-    }
-  ]
+  profileData = {
+    "name":"Gokul",
+    "email":"gokuldsp01@gmail.com",
+    "phoneNo":7708161955,
+    "address":"Sathy"
+  }
   constructor(private http:HttpClient) { }
   show(){
     this.toolbar = true;
@@ -39,7 +23,19 @@ export class CommonService {
     return this.http.get('trainStations')
   }
   bookFun(){
-    return this.SeatsAva;
+    return this.http.get('SeatsAva');
+  }
+  bookUpdate(id:any,val:any){
+    return this.http.put('SeatsAva/'+id,val);
+  }
+  historyGet(){
+    return this.http.get('SeatsAva?Status=true');
+  }
+  cancelTicket(val:any){
+    return this.http.post('cancelTicket',val)
+  }
+  cancelGet(){
+    return this.http.get('cancelTicket')
   }
 
 }

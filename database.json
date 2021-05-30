@@ -1,0 +1,42 @@
+{
+  "SeatsAva": [
+    {
+      "Classes": "Sleeper",
+      "TrainStatus": "Train Departed",
+      "Amount": 900,
+      "id": 1
+    },
+    {
+      "Classes": "AC 3 Tier",
+      "TrainStatus": "Train Departed",
+      "Amount": 2605,
+      "Status": false,
+      "id": 2
+    },
+    {
+      "Classes": "AC 2 Tier",
+      "TrainStatus": "Train Departed",
+      "Amount": 4375,
+      "Status": false,
+      "id": 3
+    },
+    {
+      "Classes": "AC 3 Tier",
+      "TrainStatus": "Train Departed",
+      "Amount": 5380,
+      "Status": false,
+      "id": 4
+    }
+  ],
+  "cancelTicket": [
+    {
+      "Classes": "Sleeper",
+      "TrainStatus": "Train Departed",
+      "Amount": 900,
+      "date": "2021-05-29T18:30:00.000Z",
+      "going_to": "Comilla",
+      "leaving_form": "dhaka",
+      "id": 1
+    }
+  ]
+}

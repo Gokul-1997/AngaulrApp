@@ -16,23 +16,24 @@ export class BookingComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.seatAva = this.service.bookFun()
+   this.service.bookFun().subscribe(res =>{
+    this.seatAva = res;
+    })
     this.bookingData = JSON.parse(localStorage.getItem("ticketBook") || '{}')
   }
   eventPass(val:any){
     this.selectedSeat = val;
   }
   submitData(){
-    console.log(this.bookingData,this.selectedSeat)
-    let data = {
-      "date":this.bookingData.date,
-      "going_to":this.bookingData.going_to,
-      "leaving_form":this.bookingData.leaving_form,
-      "Amount":this.selectedSeat.Amount,
+    let dataval ={
+      "Classes":this.selectedSeat.Classes,
       "TrainStatus":this.selectedSeat.TrainStatus,
-      "Classes":this.selectedSeat.Classes
+      "Amount":this.selectedSeat.Amount,
+      "Status":true
     }
-  localStorage.setItem('booked',JSON.stringify(data))
+    this.service.bookUpdate(this.selectedSeat.id,dataval).subscribe(res =>{
+      console.log(res)
+    })
   this.router.navigate(['home/history'])
   }
 }

@@ -6,10 +6,11 @@ import { HomeComponent } from './home.component';
 import { SharedModule } from '../../shared/shared.module';
 import { BookingComponent } from './booking/booking.component';
 import { HistoryComponent } from './history/history.component';
+import { CancelComponent } from './cancel/cancel.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, BookingComponent, HistoryComponent],
+  declarations: [HomeComponent, BookingComponent, HistoryComponent,CancelComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
