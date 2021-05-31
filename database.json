@@ -4,42 +4,42 @@
       "Classes": "Sleeper",
       "TrainStatus": "Currently Available",
       "Amount": 900,
-      "Status": false,
+      "Status": true,
       "id": 1
     },
     {
       "Classes": "AC 3 Tier",
       "TrainStatus": "Currently Available",
       "Amount": 2605,
-      "Status": false,
+      "Status": true,
       "id": 2
     },
     {
       "Classes": "AC 2 Tier",
       "TrainStatus": "Currently Available",
       "Amount": 4375,
-      "Status": false,
+      "Status": true,
       "id": 3
     },
     {
       "Classes": "AC 3 Tier",
       "TrainStatus": "Currently Available",
       "Amount": 5380,
-      "Status": false,
+      "Status": true,
       "id": 4
     },
     {
       "Classes": "Sleeper",
       "TrainStatus": "Currently Available",
       "Amount": 745,
-      "Status": false,
+      "Status": true,
       "id": 5
     },
     {
       "Classes": "Secound Sitting",
       "TrainStatus": "Currently Available",
       "Amount": 455,
-      "Status": false,
+      "Status": true,
       "id": 6
     }
   ],
@@ -52,6 +52,33 @@
       "going_to": "Chittagong",
       "leaving_form": "comilla",
       "id": 1
+    },
+    {
+      "Classes": "Sleeper",
+      "TrainStatus": "Currently Available",
+      "Amount": 900,
+      "date": "2021-05-30T18:30:00.000Z",
+      "going_to": "Comilla",
+      "leaving_form": "dhaka",
+      "id": 2
+    },
+    {
+      "Classes": "AC 2 Tier",
+      "TrainStatus": "Currently Available",
+      "Amount": 4375,
+      "date": "2021-06-09T18:30:00.000Z",
+      "going_to": "Chittagong",
+      "leaving_form": "dhaka",
+      "id": 3
+    },
+    {
+      "Classes": "AC 3 Tier",
+      "TrainStatus": "Currently Available",
+      "Amount": 2605,
+      "date": "2021-05-30T18:30:00.000Z",
+      "going_to": "Comilla",
+      "leaving_form": "dhaka",
+      "id": 4
     }
   ]
 }

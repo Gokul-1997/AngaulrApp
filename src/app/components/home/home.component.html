@@ -1,6 +1,6 @@
-
+<div class="main-wrapper">
 <form class="example-form" (ngSubmit)="SearchBus(f)" #f="ngForm">
-  <mat-form-field appearance="fill">
+  <mat-form-field style="padding-left: 10px;" appearance="fill">
     <mat-label>Leaving from</mat-label>
     <mat-select (selectionChange)="leave($event)" ngModel name="leaving_form" required>
       <mat-option value="">Select Place</mat-option>
@@ -43,6 +43,7 @@
     <!-- Classes is <strong>required</strong> -->
     <!-- </mat-error> -->
   <!-- </mat-form-field> -->
-  <button type="submit" >Search</button>
+  <button class="btn" type="submit" >Search</button>
 
 </form>
+</div>

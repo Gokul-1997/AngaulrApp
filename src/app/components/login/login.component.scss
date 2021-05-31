@@ -22,7 +22,10 @@ body {
 }
 
 .main-wrapper {
-	height: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh
 }
 
 .positronx {
@@ -44,6 +47,9 @@ body {
 	-ms-transform: scale(1);
 	z-index: 5;
 	max-width: 330px;
+	.mat-card-title{
+		padding-bottom: 30px;
+	}
 }
 
 .box.back {
@@ -62,7 +68,7 @@ body {
 	border-radius: 10px;
 	position: absolute;
 	top: -10px;
-	background: rgba(255, 255, 255, .6);
+	// background: rgba(255, 255, 255, .6);
 	left: 0;
 	transform: scale(.95);
 	-webkit-transform: scale(.95);
@@ -99,8 +105,17 @@ body {
 
 .main-wrapper .mat-stroked-button {
 	border: 1px solid currentColor;
-	line-height: 54px;
-	background: #FFF7FA;
+    line-height: 54px;
+    background: #e5f3ff;
+    color: #1565C0;
+	font-size: 16px;
+}
+
+.main-wrapper .mat-stroked-button:hover {
+	border: 1px solid currentColor;
+    line-height: 54px;
+    background: #40C4FF;
+    color: white;
 }
 
 .main-wrapper .mat-form-field-appearance-legacy .mat-form-field-infix {

@@ -1,7 +1,7 @@
 <!-- Toolbar -->
 <nav *ngIf="service.toolbar">
   <mat-toolbar color="primary">
-    <mat-toolbar-row>
+    <mat-toolbar-row class="flex">
       <div class="menu_sec">
         <button mat-icon-button>
           <mat-icon (click)="sidenav.toggle()">menu </mat-icon>
@@ -21,16 +21,18 @@
   </mat-toolbar>
 </nav>
 <mat-sidenav-container>
-  <mat-sidenav mode="side" #sidenav>
+  <mat-sidenav class="side-icons" mode="side" #sidenav>
     <mat-nav-list (click)="sidenav.close()">
       <a mat-list-item routerLink="home" ><span class="material-icons">
-          dashboard
+          home
         </span> Home </a>
       <a mat-list-item routerLink="home/history" ><span class="material-icons">
-          file_copy
+          history
         </span> History </a>
       <a mat-list-item routerLink="profile"><span class="material-icons">
-          dashboard
+        <span class="material-icons-outlined">
+          account_circle
+          </span>
         </span>
         Profile </a>
     </mat-nav-list>
